@@ -65,7 +65,7 @@ create view cntBidder as
 
 drop view if exists maxBidder;
 create view maxBidder as 
-	select itemid, buyer_userid as maxbidder, max(bid_price) as max_price 
+	select itemid, any_value(buyer_userid) as maxbidder, max(bid_price) as max_price 
 	from tItem natural join (select itemid, buyer_userid, bid_price from tTrade) as t
 	group by itemid;
 								
