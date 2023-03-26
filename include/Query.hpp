@@ -3,7 +3,7 @@
 
 #include "../include/Item.hpp"
 #include "../include/User.hpp"
-#include "../include/dbms.hpp"
+#include "../include/dbms.h"
 #include "param.hpp"
 #include <iostream>
 #include <stdlib.h>

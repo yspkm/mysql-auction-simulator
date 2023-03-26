@@ -10,7 +10,7 @@ HDIR = ../include
 TDIR = ../
 TARGET = ${TDIR}/myauction
 OBJECT = main.o Menu.o User.o Query.o Regex.o Item.o
-HEADERS = ${HDIR}/dbms.hpp ${HDIR}/Menu.hpp ${HDIR}/User.hpp ${HDIR}/Query.hpp ${HDIR}/Item.hpp ${HDIR}/Regex.hpp ${HDIR}/Item.hpp ${HDIR}/param.hpp
+HEADERS = ${HDIR}/dbms.h ${HDIR}/Menu.hpp ${HDIR}/User.hpp ${HDIR}/Query.hpp ${HDIR}/Item.hpp ${HDIR}/Regex.hpp ${HDIR}/Item.hpp ${HDIR}/param.hpp
 
 ${TARGET}: ${OBJECT}
 # mysql 
